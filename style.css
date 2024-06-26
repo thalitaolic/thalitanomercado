@@ -1,0 +1,144 @@
+:root {
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --header-background: #343a40;
+    --header-text: #fff;
+    --nav-background: #495057;
+    --nav-text: #fff;
+    --nav-hover: #ced4da;
+    --table-border: #dee2e6;
+    --table-header-background: #343a40;
+    --table-header-text: #fff;
+    --table-row-even: #f2f2f2;
+    --button-background: #343a40;
+    --button-text: #fff;
+    --button-hover: #495057;
+    --footer-background: #343a40;
+    --footer-text: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--header-text);
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-background);
+}
+
+nav a {
+    margin: 0 15px;
+    color: var(--nav-text);
+    text-decoration: none;
+    padding: 1em 0;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--nav-hover);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.section-title {
+    border-bottom: 2px solid var(--header-background);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--header-background);
+}
+
+.trade-log {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.trade-log th, .trade-log td {
+    border: 1px solid var(--table-border);
+    padding: 8px;
+    text-align: center;
+}
+
+.trade-log th {
+    background-color: var(--table-header-background);
+    color: var(--table-header-text);
+}
+
+.trade-log tr:nth-child(even) {
+    background-color: var(--table-row-even);
+}
+
+.contact-info {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form input, form select, form button {
+    flex: 1 1 calc(33.333% - 10px);
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid var(--table-border);
+    border-radius: 4px;
+}
+
+form button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--button-hover);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: var(--footer-background);
+    color: var(--footer-text);
+    margin-top: 20px;
+}
+
+body.dark {
+    --background-color: #212529;
+    --text-color: #f8f9fa;
+    --header-background: #495057;
+    --header-text: #f8f9fa;
+    --nav-background: #343a40;
+    --nav-text: #f8f9fa;
+    --nav-hover: #ced4da;
+    --table-border: #495057;
+    --table-header-background: #495057;
+    --table-header-text: #f8f9fa;
+    --table-row-even: #343a40;
+    --button-background: #495057;
+    --button-text: #f8f9fa;
+    --button-hover: #212529;
+    --footer-background: #495057;
+    --footer-text: #f8f9fa;
+}
