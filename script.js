@@ -88,5 +88,7 @@ function loadTheme() {
     if (theme === 'dark') {
         document.body.classList.add('dark');
         document.getElementById('theme-toggle').textContent = 'Modo Claro';
+    } else {
+        document.getElementById('theme-toggle').textContent = 'Modo Escuro';
     }
 }
